@@ -1,0 +1,27 @@
+{
+  "name": "next-level-week",
+  "version": "0.0.1",
+  "description": "semana next level week da rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rocketseat",
+    "next",
+    "level",
+    "week",
+    "frontend",
+    "backend",
+    "mobile",
+    "react",
+    "node",
+    "expo",
+    "react-native"
+  ],
+  "author": "matheus do e santos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
