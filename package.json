@@ -4,8 +4,8 @@
   "description": "api da aplicação ecoleta",
   "main": "server.js",
   "scripts": {
-    "start": "npm run knex:init && npm run dev",
-    "dev": "ts-node-dev src/server/server.ts",
+    "start": "ts-node src/server/server.ts",
+    "dev": "ts-node-dev src/server/server.ts && npm run knex:init",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:init": "npm run knex:migrate && npm run knex:seed"
