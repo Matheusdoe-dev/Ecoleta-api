@@ -2,12 +2,13 @@
   "name": "ecoleta-api",
   "version": "0.0.1",
   "description": "api da aplicação ecoleta",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "ts-node-dev --ignore-watch node_modules src/server/server.ts",
+    "start": "npm run knex:init && npm run dev",
+    "dev": "ts-node-dev --ignore-watch node_modules src/server/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
-    "knex:start": "npm run knex:migrate && npm run knex:seed"
+    "knex:init": "npm run knex:migrate && npm run knex:seed"
   },
   "keywords": [
     "rocketseat",
